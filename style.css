@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.center-wrapper{
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.game-buttons-container{
+    width:400px;
+    display:flex;
+    justify-content:space-around;
+}
+
+.game-button{
+    padding:15px;
+    font-size:20px;
+}
