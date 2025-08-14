@@ -13,6 +13,18 @@
 
 }
 
+.score{
+    margin-bottom:5px;
+}
+.scoreboard{
+    display:flex;
+    width: 400px;
+    align-items:center;
+    justify-content:center;
+    gap: 20px;
+    margin-bottom:50px;
+}
+
 .game-buttons-container{
     width:400px;
     display:flex;
@@ -33,5 +45,9 @@
     display:flex;
     width:400px;
     justify-content:center;
+    margin-bottom:20px;
+}
+
+.winner-text{
     margin-bottom:50px;
 }

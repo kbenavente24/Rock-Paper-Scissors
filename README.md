@@ -1,2 +1,2 @@
 # Rock-Paper-Scissors
-Small project to practice Javascript, HTML, and CSS
+Quick and simple project to refresh my JavaScript, HTML, CSS, and Git command knowledge
