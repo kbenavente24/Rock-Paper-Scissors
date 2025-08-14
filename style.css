@@ -9,15 +9,29 @@
     display:flex;
     justify-content: center;
     align-items:center;
+    flex-direction:column;
+
 }
 
 .game-buttons-container{
     width:400px;
     display:flex;
-    justify-content:space-around;
+    justify-content:space-between;
 }
 
 .game-button{
     padding:15px;
     font-size:20px;
+}
+
+.start-button{
+    padding:5px;
+    font-size:15px;    
+    margin-bottom:50px
+}
+.game-text{
+    display:flex;
+    width:400px;
+    justify-content:center;
+    margin-bottom:50px;
 }
