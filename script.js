@@ -19,7 +19,8 @@ const rockButton = document.querySelector(".rock");
 
 rockButton.addEventListener("click", () => {
     if(gameStarted === true){
-        runMatch("rock");
+        userInput = "rock";
+        runMatch(userInput);
         gameText.textContent = `You chose rock and CPU chose ${cpuInput}`
         winningTextLine();
         userScoreText.textContent = `You: ${userScore}`
@@ -32,8 +33,11 @@ const paperButton = document.querySelector(".paper");
 
 paperButton.addEventListener("click", () => {
     if(gameStarted === true){
-        runMatch("paper");
+        userInput = "paper";
+        runMatch(userInput);
         gameText.textContent = `You chose paper and CPU chose ${cpuInput}`
+        setUserChoiceImage(userInput);
+        setCPUChoiceImage(cpuInput);
         winningTextLine();
         userScoreText.textContent = `You: ${userScore}`
         cpuScoreText.textContent = `CPU: ${cpuScore}`
@@ -44,13 +48,34 @@ const scissorsButton = document.querySelector(".scissors");
 
 scissorsButton.addEventListener("click", () => {
     if(gameStarted === true){
-        runMatch("scissors");
+        userInput = "scissors"
+        runMatch(userInput);
         gameText.textContent = `You chose scissors and CPU chose ${cpuInput}`
         winningTextLine();
         userScoreText.textContent = `You: ${userScore}`
         cpuScoreText.textContent = `CPU: ${cpuScore}`
     }
 })
+
+let userChoiceImage = document.querySelector(".image-icon");
+
+let cpuChoiceImage = document.querySelector(".cpu-image-icon")
+
+function setUserChoiceImage(input){
+    if(input == "paper"){
+        userChoiceImage.src = "images/papericon.png";
+        userChoiceImage.style.display = "block";
+    }
+}
+
+function setCPUChoiceImage(input){
+    if(input == "paper"){
+        cpuChoiceImage.src = "images/papericon.png";
+        cpuChoiceImage.style.display = "block";
+    }
+}
+
+
 
 
 
@@ -71,6 +96,7 @@ scissorsButton.addEventListener("click", () => {
 let userScore = 0;
 let cpuScore = 0;
 let cpuInput = "";
+let userInput = "";
 let roundWinner = "";
 
 function winningTextLine(){

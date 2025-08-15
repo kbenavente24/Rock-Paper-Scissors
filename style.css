@@ -2,27 +2,37 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color:#fff4dc
+
 }
 
 .center-wrapper{
     height:100vh;
     display:flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items:center;
     flex-direction:column;
 
 }
 
+.logo{
+    display:flex;
+    justify-content:center;
+    height:350px;
+    width: 550px;
+}
+
 .score{
-    margin-bottom:5px;
+    margin-bottom:10px;
 }
 .scoreboard{
     display:flex;
     width: 400px;
     align-items:center;
     justify-content:center;
-    gap: 20px;
+    gap: 50px;
     margin-bottom:50px;
+    font-size:30px;
 }
 
 .game-buttons-container{
@@ -34,6 +44,7 @@
 .game-button{
     padding:15px;
     font-size:20px;
+    margin-bottom:100px;
 }
 
 .start-button{
@@ -50,4 +61,22 @@
 
 .winner-text{
     margin-bottom:50px;
+}
+
+.rps-icons{
+    display:flex;
+    width:400px;
+    justify-content:center;
+    justify-content:space-between;
+}
+.image-icon{
+    display:none;
+    width:150px;
+    height:200px;
+}
+
+.cpu-image-icon{
+    display:none;
+    width:150px;
+    height:200px;
 }
