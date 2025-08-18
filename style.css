@@ -18,7 +18,7 @@
 .logo{
     display:flex;
     justify-content:center;
-    height:350px;
+    height:250px;
     width: 550px;
 }
 
@@ -41,6 +41,22 @@
     justify-content:space-between;
 }
 
+.first-to-5-button{
+    display:none;
+    padding:15px;
+    font-size:15px;
+    margin-bottom:50px;
+}
+
+.first-to-10-button{
+    display:none;
+    padding:15px;
+    font-size:15px;
+    margin-bottom:50px;
+
+}
+
+
 .game-button{
     padding:15px;
     font-size:20px;
@@ -52,15 +68,24 @@
     font-size:15px;    
     margin-bottom:50px
 }
+
+.game-mode-buttons{
+    width: 400px;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+}
+
 .game-text{
     display:flex;
     width:400px;
     justify-content:center;
-    margin-bottom:20px;
+    margin-bottom:50px;
 }
 
 .winner-text{
     margin-bottom:50px;
+    display:none;
 }
 
 .rps-icons{
